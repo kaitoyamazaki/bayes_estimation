@@ -34,6 +34,13 @@ $ python3 after_kakuritu.py     # 新アルゴリズムの評価
 
 参考にさせていただいた**5章.pdf**の中の式をpythonでそのまま実装しました。</br>
 
+## レポジトリ詳細
+
+- [src](https://github.com/kaitoyamazaki/bayes_estimation/tree/master/src)</br>
+作成したプログラムがあるフォルダーです。</br>
+- [figure](https://github.com/kaitoyamazaki/bayes_estimation/tree/master/figure)</br>
+出力されたグラフが保存されたフォルダーです。</br>
+
 ## プログラムの説明
 
 - [before_kakuritu](https://github.com/kaitoyamazaki/bayes_estimation/blob/master/src/before_kairyou.py)</br>
