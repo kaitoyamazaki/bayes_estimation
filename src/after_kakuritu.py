@@ -63,6 +63,12 @@ class Bayes():
         #print("積分値 : ", sum)
         return data
 
+    def answer_probability(self, data, value):
+        print(value, "回目の施行")
+        print("max probability : ", max(data))
+        print("finish rate : ", data.index(max(data)) / 100)
+
+
     def make_figure(self, x, first, second, third, forth, fifth):
 
         #全部の結果をグラフに出力
@@ -92,33 +98,35 @@ class Bayes():
 if __name__ == "__main__":
     kakuritu = Bayes()
     x = kakuritu.make_x_range()
+
     # 施行１回目の確率計算
     p_t = kakuritu.make_data_p_t()
     p_a_t1 = kakuritu.make_p_a_t(1)
-    #print(p_t)
-    #print(p_a_t)
     p_t_a1 = kakuritu.make_p_t_a(p_t, p_a_t1, 2)
-    #print(p_t_a)
+    kakuritu.answer_probability(p_t_a1, 1)
+
 
     # 施行２回目の確率計算
     p_a_t2 = kakuritu.make_p_a_t(1)
     p_t_a2 = kakuritu.make_p_t_a(p_a_t2, p_t_a1, 1.49254)
-    #print(p_t_a2)
+    kakuritu.answer_probability(p_t_a2, 2)
+
 
     # 施行３回目の確率計算
     p_a_t3 = kakuritu.make_p_a_t(1)
     p_t_a3 = kakuritu.make_p_t_a(p_a_t3, p_t_a2, 1.32675)
-    #print(p_t_a3)
+    kakuritu.answer_probability(p_t_a3, 3)
 
 
     # 施行４回目の確率計算
-
     p_a_t4 = kakuritu.make_p_a_t(1)
     p_t_a4 = kakuritu.make_p_t_a(p_a_t4, p_t_a3, 1.243825)
+    kakuritu.answer_probability(p_t_a4, 4)
+
 
     # 施行５回目の確率計算
-
     p_a_t5 = kakuritu.make_p_a_t(1)
     p_t_a5 = kakuritu.make_p_t_a(p_a_t5, p_t_a4, 1.19408)
+    kakuritu.answer_probability(p_t_a5, 5)
 
     kakuritu.make_figure(x,p_t_a1, p_t_a2, p_t_a3, p_t_a4, p_t_a5)
