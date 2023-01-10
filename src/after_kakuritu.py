@@ -128,7 +128,7 @@ class Bayes():
         plt.yticks([0.00, 0.02, 0.04, 0.06, 0.08])
         plt.savefig("../figure/新アルゴリズム_施行5回目の確率分布.png")
 
-        plt.show()
+        #plt.show()
 
 
 if __name__ == "__main__":

@@ -121,7 +121,7 @@ class Bayes():
         plt.yticks([0.00,0.02,0.04,0.06,0.08])
         plt.savefig("../figure/旧式アルゴリズム_施行5回目の確率分布.png")
 
-        plt.show()
+        #plt.show()
 
 if __name__ == "__main__":
     kakuritu = Bayes()
