@@ -55,16 +55,16 @@ class Bayes():
             try:
                 value =  mu * p_t[i] * p_a_t[i]
                 sum = sum + value
-                #print(value)
                 data.append(value)
             except:
                 print('error')
                 pass
 
-        #print(sum)
+        #print("積分値 : ", sum)
         return data
 
     def make_figure(self, x, first, second, third, forth, fifth):
+
         #全部の結果をグラフに出力
 
         #施行１回目のグラフ
@@ -102,22 +102,23 @@ if __name__ == "__main__":
 
     # 施行２回目の確率計算
     p_a_t2 = kakuritu.make_p_a_t(1)
-    p_t_a2 = kakuritu.make_p_t_a(p_a_t2, p_t_a1, 3.04)
+    p_t_a2 = kakuritu.make_p_t_a(p_a_t2, p_t_a1, 1.49254)
     #print(p_t_a2)
 
     # 施行３回目の確率計算
     p_a_t3 = kakuritu.make_p_a_t(1)
-    p_t_a3 = kakuritu.make_p_t_a(p_a_t3, p_t_a2, 1.99365)
+    p_t_a3 = kakuritu.make_p_t_a(p_a_t3, p_t_a2, 1.32675)
     #print(p_t_a3)
+
 
     # 施行４回目の確率計算
 
     p_a_t4 = kakuritu.make_p_a_t(1)
-    p_t_a4 = kakuritu.make_p_t_a(p_a_t4, p_t_a3, 2.499713)
+    p_t_a4 = kakuritu.make_p_t_a(p_a_t4, p_t_a3, 1.243825)
 
     # 施行５回目の確率計算
 
     p_a_t5 = kakuritu.make_p_a_t(1)
-    p_t_a5 = kakuritu.make_p_t_a(p_a_t5, p_t_a4, 1.99999995)
+    p_t_a5 = kakuritu.make_p_t_a(p_a_t5, p_t_a4, 1.19408)
 
     kakuritu.make_figure(x,p_t_a1, p_t_a2, p_t_a3, p_t_a4, p_t_a5)
