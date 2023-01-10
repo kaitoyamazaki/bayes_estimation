@@ -75,6 +75,7 @@ class Bayes():
         plt.figure()
         plt.plot(x,first)
         plt.suptitle("Old algorithm probability for 1st time of enforcement")
+        plt.xlabel("t")
 
         #施行２回目のグラフ
         plt.figure()
