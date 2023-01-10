@@ -28,6 +28,8 @@ $ python3 after_kakuritu.py     # 新アルゴリズムの評価
 - 改良後</br>
 完走 → 完走 → 完走 → 完走 → 完走
 
+この結果から新アルゴリズムの方がどれだけ旧アルゴリズムより良好であるか考える。
+
 ## プログラムの説明
 
 - [before_kakuritu](https://github.com/kaitoyamazaki/bayes_estimation/blob/master/src/before_kairyou.py)</br>
@@ -39,5 +41,8 @@ $ python3 after_kakuritu.py     # 新アルゴリズムの評価
 ## 課題の結果
 
 新旧アルゴリズムそれぞれの5回終了時の完走率の確率分布は以下の様になった。</br>
+左の図が**旧アルゴリズムの結果**であり、右の図が**新アルゴリズムの結果**である。</br>
 
 <img src = "figure/旧式アルゴリズム_施行5回目の確率分布.png" width="360px"> <img src = "figure/新アルゴリズム_施行5回目の確率分布.png" width="360px">
+
+
