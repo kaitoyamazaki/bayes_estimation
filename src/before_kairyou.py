@@ -75,36 +75,46 @@ class Bayes():
         plt.figure()
         plt.plot(x,first)
         plt.suptitle("Old algorithm probability for 1st time of enforcement")
-        plt.xlabel("t (finish rate)")
+        plt.xlabel("t")
         plt.ylabel("probability")
+        plt.xticks([0,0.5,1])
+        plt.yticks([0.00,0.02,0.04,0.06,0.08])
 
         #施行２回目のグラフ
         plt.figure()
         plt.plot(x,second)
         plt.suptitle("Old algorithm probability for 2st time of enforcement")
-        plt.xlabel("t (finish rate)")
+        plt.xlabel("t")
         plt.ylabel("probability")
+        plt.xticks([0,0.5,1])
+        plt.yticks([0.00,0.02,0.04,0.06,0.08])
 
         #施行３回目のグラフ
         plt.figure()
         plt.plot(x,third)
         plt.suptitle("Old algorithm probability for 3st time of enforcement")
-        plt.xlabel("t (finish rate)")
+        plt.xlabel("t")
         plt.ylabel("probability")
+        plt.xticks([0,0.5,1])
+        plt.yticks([0.00,0.02,0.04,0.06,0.08])
 
         #施行４回目のグラフ
         plt.figure()
         plt.plot(x,forth)
         plt.suptitle("Old algorithm probability for 4st time of enforcement")
-        plt.xlabel("t (finish rate)")
+        plt.xlabel("t")
         plt.ylabel("probability")
+        plt.xticks([0,0.5,1])
+        plt.yticks([0.00,0.02,0.04,0.06,0.08])
 
         #施行５回目のグラフ
         plt.figure()
         plt.plot(x,fifth)
         plt.suptitle("Old algorithm probability for 5st time of enforcement")
-        plt.xlabel("t (finish rate)")
+        plt.xlabel("t")
         plt.ylabel("probability")
+        plt.xticks([0,0.5,1])
+        plt.yticks([0.00,0.02,0.04,0.06,0.08])
 
         plt.show()
 
