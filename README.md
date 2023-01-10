@@ -41,4 +41,4 @@ $ python3 after_kakuritu.py     # 新アルゴリズムの評価
 新旧アルゴリズムそれぞれの5回終了時の完走率の確率分布は以下の様になった。</br>
 
 - 旧アルゴリズム</br>
-<img src = "figure/旧式アルゴリズム_施行5回目の確率分布.png">
+<img src = "figure/旧式アルゴリズム_施行5回目の確率分布.png" width="320px">
