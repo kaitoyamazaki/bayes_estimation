@@ -79,6 +79,7 @@ class Bayes():
         plt.ylabel("probability")
         plt.xticks([0,0.5,1])
         plt.yticks([0.00,0.02,0.04,0.06,0.08])
+        plt.savefig("../figure/旧式アルゴリズム_施行1回目の確率分布.png")
 
         #施行２回目のグラフ
         plt.figure()
@@ -88,6 +89,7 @@ class Bayes():
         plt.ylabel("probability")
         plt.xticks([0,0.5,1])
         plt.yticks([0.00,0.02,0.04,0.06,0.08])
+        plt.savefig("../figure/旧式アルゴリズム_施行2回目の確率分布.png")
 
         #施行３回目のグラフ
         plt.figure()
@@ -97,6 +99,7 @@ class Bayes():
         plt.ylabel("probability")
         plt.xticks([0,0.5,1])
         plt.yticks([0.00,0.02,0.04,0.06,0.08])
+        plt.savefig("../figure/旧式アルゴリズム_施行3回目の確率分布.png")
 
         #施行４回目のグラフ
         plt.figure()
@@ -106,6 +109,7 @@ class Bayes():
         plt.ylabel("probability")
         plt.xticks([0,0.5,1])
         plt.yticks([0.00,0.02,0.04,0.06,0.08])
+        plt.savefig("../figure/旧式アルゴリズム_施行4回目の確率分布.png")
 
         #施行５回目のグラフ
         plt.figure()
@@ -115,6 +119,7 @@ class Bayes():
         plt.ylabel("probability")
         plt.xticks([0,0.5,1])
         plt.yticks([0.00,0.02,0.04,0.06,0.08])
+        plt.savefig("../figure/旧式アルゴリズム_施行5回目の確率分布.png")
 
         plt.show()
 
@@ -151,28 +156,3 @@ if __name__ == "__main__":
     kakuritu.answer_probability(p_t_a5, 5)
 
     kakuritu.make_figure(x,p_t_a1, p_t_a2, p_t_a3, p_t_a4, p_t_a5)
-
-    """
-    # 全部の結果をグラフに出力
-
-    #施行１回目のグラフ
-    plt.figure()
-    plt.plot(x,p_t_a1)
-
-    #施行２回目のグラフ
-    plt.figure()
-    plt.plot(x,p_t_a2)
-
-    #施行３回目のグラフ
-    plt.figure()
-    plt.plot(x,p_t_a3)
-
-    #施行４回目のグラフ
-    plt.figure()
-    plt.plot(x,p_t_a4)
-
-    #施行５回目のグラフ
-    plt.figure()
-    plt.plot(x,p_t_a5)
-    plt.show()
-    """
